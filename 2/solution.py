@@ -34,5 +34,5 @@ if __name__ == "__main__":
     lines = [line.strip() for line in fin.readlines() if line.strip()]
     main(lines)
     t = timeit.Timer(stmt="solution.main(lines)", setup="import solution")
-    print("TASK #1: ", t.timer())
+    print("TASK: ", t.timer())
     
