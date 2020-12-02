@@ -237,23 +237,25 @@ def adv1(puzzle: list, comb: int) -> int:
 if __name__ == "__main__":
     import timeit
 
-    t = timeit.Timer(stmt="adv1.adv1(adv1.values, 2)", setup="import adv1")
+    t = timeit.Timer(
+        stmt="solution.adv1(solution.values, 2)",
+        setup="import solution")
     t2 = timeit.Timer(
-        stmt="adv1.adv1(adv1.values, 3)",
-        setup="import adv1")
+        stmt="adv1.adv1(solution.values, 3)",
+        setup="import solution")
 
     """
     Find the two entries that sum to 2020; what do you get if you multiply them together?
     """
     print("Task #1: ", t.timer())
     # Task #1:  0.0393494
-    print(adv1(values,2))
+    print(adv1(values, 2))
     # 567171
     """
     what is the product of the three entries that sum to 2020?
     """
     print("Task #2: ", t2.timer())
     # Task #2:  0.0395546
-    adv1(values,3)
-    print(adv1(values,3))
+    adv1(values, 3)
+    print(adv1(values, 3))
     # 212428694
