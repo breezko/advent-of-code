@@ -1,4 +1,3 @@
-
 from itertools import combinations
 
 values = [
@@ -201,7 +200,8 @@ values = [
     1688,
     1905,
     1786,
-    1281]
+    1281,
+]
 
 
 def _mult(items: tuple) -> int:
@@ -237,12 +237,8 @@ def adv1(puzzle: list, comb: int) -> int:
 if __name__ == "__main__":
     import timeit
 
-    t = timeit.Timer(
-        stmt="solution.adv1(solution.values, 2)",
-        setup="import solution")
-    t2 = timeit.Timer(
-        stmt="adv1.adv1(solution.values, 3)",
-        setup="import solution")
+    t = timeit.Timer(stmt="solution.adv1(solution.values, 2)", setup="import solution")
+    t2 = timeit.Timer(stmt="adv1.adv1(solution.values, 3)", setup="import solution")
 
     """
     Find the two entries that sum to 2020; what do you get if you multiply them together?
