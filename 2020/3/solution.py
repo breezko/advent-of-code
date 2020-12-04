@@ -9,16 +9,7 @@ import timeit
 
 
 def main(lines: list) -> None:
-    """https://adventofcode.com/2020/day/3
-    r1 = Part 1 result
-    r2 = Part 2 result
-
-    Args:
-        lines (list): puzzle input
-
-    Returns:
-        tuple: (part1,part2)
-    """
+    """https://adventofcode.com/2020/day/3"""
     r2 = 1
     slopes = [(1, 1), (3, 1), (5, 1), (7, 1), (1, 2)]
     ph, pw = 0, 0
@@ -38,5 +29,3 @@ if __name__ == "__main__":
     fin = open("data.in", "r")
     lines = [line.strip() for line in fin.readlines()]
     main(lines)
-    t = timeit.Timer(stmt="solution.main(lines)", setup="import solution")
-    print("TASK: ", t.timer())

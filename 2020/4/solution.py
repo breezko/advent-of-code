@@ -10,16 +10,7 @@ import re
 
 
 def main(lines: list) -> None:
-    """https://adventofcode.com/2020/day/3
-    r1 = Part 1 result
-    r2 = Part 2 result
-
-    Args:
-        lines (list): puzzle input
-
-    Returns:
-        tuple: (part1,part2)
-    """
+    """https://adventofcode.com/2020/day/4"""
     s1, s2, r1, r2, req = 0, 0, 0, 0, 7
     for line in lines:
         words = [i.split(":") for i in line.split()]
@@ -74,5 +65,3 @@ if __name__ == "__main__":
     fin = open("data.in", "r")
     lines = [l.strip() for l in fin.readlines()]
     main(lines)
-    t = timeit.Timer(stmt="solution.main(lines)", setup="import solution")
-    print("TASK: ", t.timer())
