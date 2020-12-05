@@ -8,15 +8,15 @@ Language: Python3
 
 | Day | 2020 |
 | ------ | ------ |
-| 1 | [Python](2020/1/solution.py) |
-| 2 | [Python](2020/2/solution.py) |
-| 3 | [Python](2020/3/solution.py) |
-| 4 | [Python](2020/4/solution.py) |
-| 5 | [Python](2020/5/solution.py) |
-| 6 | [Python](2020/6/solution.py) |
-| 7 | [Python](2020/7/solution.py) |
-| 8 | [Python](2020/8/solution.py) |
-| 9 | [Python](2020/9/solution.py) |
+| 01 | [Python](2020/01/solution.py) |
+| 02 | [Python](2020/02/solution.py) |
+| 03 | [Python](2020/03/solution.py) |
+| 04 | [Python](2020/04/solution.py) |
+| 05 | [Python](2020/05/solution.py) |
+| 06 | [Python](2020/06/solution.py) |
+| 07 | [Python](2020/07/solution.py) |
+| 08 | [Python](2020/08/solution.py) |
+| 09 | [Python](2020/09/solution.py) |
 | 10 | [Python](2020/10/solution.py) |
 | 11 | [Python](2020/11/solution.py) |
 | 12 | [Python](2020/12/solution.py) |
