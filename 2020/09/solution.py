@@ -15,8 +15,7 @@ def main(lines: list) -> None:
     while True:
         ans1 = lines.popleft()
         for comb in itertools.combinations(preamble, 2):
-            x, y = comb
-            s = int(x) + int(y)
+            s = sum(comb)
             if s == ans1:
                 preamble.popleft()
                 preamble.append(ans1)
@@ -38,10 +37,8 @@ def main(lines: list) -> None:
                 break
 
         if window_sum == ans1:
-            items = sorted(items)
-            ans2 = items[0] + items[-1]
+            ans2 = min(items) + max(items)
             break
-
     print(ans1, ans2)
 
 
