@@ -3,8 +3,6 @@ import math
 
 
 def main(puzzle: list) -> int:
-    """https://adventofcode.com/2020/day/1"""
-
     res = res2 = []
     for line in puzzle:
         res.append(math.floor(line / 3 - 2))
