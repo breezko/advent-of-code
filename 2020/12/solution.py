@@ -44,15 +44,11 @@ def main(lines):
                 dx, dy = directions[command]
                 x += amt * dx
                 y += amt * dy
-                # print(command,amt,dx,dy,x,y)
-
                 continue
             else:
                 if command in rotate:
                     h = h + (amt * rotate[command])
-                    print(h)
                     h %= 360
-                    print("Heading %s" % h, command, amt)
                 else:
                     dx, dy = head[h]
                     x += amt * dx
