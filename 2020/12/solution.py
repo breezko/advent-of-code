@@ -28,7 +28,6 @@ def main(lines):
                     for _ in range(dc):
                         wx, wy = wy, -wx
                 else:
-                    print("moving", s[f], directions[s[f]])
                     x += k * wx
                     y += k * wy
         print("Part #2", abs(x) + abs(y))
